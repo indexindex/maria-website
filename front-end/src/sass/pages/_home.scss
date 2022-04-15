@@ -1,0 +1,12 @@
+.section-intro {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+
+    &__about {
+        max-width: rem-calc(448px);
+        min-width: rem-calc(250px);
+        flex: 1;
+        padding: 1rem;
+    }
+}
