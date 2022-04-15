@@ -1,21 +1,11 @@
 // * ANIMATIONS
 
-@keyframes openMenuWheelLayer {
+@keyframes headerAppear {
     0% {
-        opacity: 0;
+        top: -5rem;
     }
 
     100% {
-        opacity: .5;
-    }
-}
-
-@keyframes closeMenuWheelLayer {
-    0% {
-        opacity: .5;
-    }
-
-    100% {
-        opacity: 0;
+        top: 0;
     }
 }

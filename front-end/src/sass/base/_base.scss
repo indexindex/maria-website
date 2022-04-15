@@ -18,7 +18,11 @@ body {
     font-family: 'AnekOdia', sans-serif;
     background-color: $color-secondary;
     color: $color-light;
-    padding: 0;
+    padding: 0 4rem;
+
+    @include respond(custom-650) {
+        padding: 0;
+    }
 }
 
 // * Text selection background

@@ -1,0 +1,7 @@
+header {
+    background-color: $color-primary;
+    padding: .5rem;
+    position: relative;
+    animation: headerAppear 1s;
+    animation-fill-mode: forwards;
+}
