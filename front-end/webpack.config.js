@@ -62,7 +62,7 @@ const cssLoaders = extra => {
 // return html pages
 const htmlPages = newPage => {
     const page = {
-        filename: `html/${newPage}`,
+        filename: `${newPage}`,
         template: `./html/${newPage}`, // custom html file location
         minify: {
             collapseWhitespace: isProd // minify HTML if we are in production mode
