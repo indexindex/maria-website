@@ -64,7 +64,6 @@ const htmlPages = newPage => {
     const page = {
         filename: `html/${newPage}`,
         template: `./html/${newPage}`, // custom html file location
-        favicon: 'favicon.ico',
         minify: {
             collapseWhitespace: isProd // minify HTML if we are in production mode
         }
@@ -98,8 +97,13 @@ module.exports = {
     // while dev server is running, all the dist content is saved in local memory, to ensure faster running
     devServer: {
         port: 8080,
-        hot: isDev, // activate devServer only if isDev === true
-        contentBase: path.join(__dirname, '../dist/') // where to look for content
+        hot: isDev, // activate devServer only if isDev === true,
+        static: {
+            directory: path.resolve(__dirname, '../dist/html/') // where to look for content
+        },
+        devMiddleware: {
+            writeToDisk: true
+        }
     },
     devtool: isDev ? 'source-map' : false, // if we are in development mode add source-maps, otherwise "stay silent"
     plugins: [
@@ -107,27 +111,6 @@ module.exports = {
         new HTMLWebpackPlugin(htmlPages('index.html')),
         // adding CleanWebpackPlugin
         new CleanWebpackPlugin(),
-        // adding CopyWebpackPlugin
-        new CopyWebpackPlugin({
-            patterns: [
-                {
-                    from: path.resolve(__dirname, 'src/favicon.ico'), // copy from (it can be a folder/folders or just a file)
-                    to: path.resolve(__dirname, '../dist'), // copy to...
-                    globOptions: {
-                        dot: true,
-                        gitignore: true,
-                    }
-                },
-                {
-                    from: path.resolve(__dirname, 'src/assets/json'), // copy from (it can be a folder/folders or just a file)
-                    to: path.resolve(__dirname, '../dist/assets/json'), // copy to...
-                    globOptions: {
-                        dot: true,
-                        gitignore: true,
-                    }
-                }
-            ]
-        }),
         // adding MiniCssExtractPlugin
         new MiniCssExtractPlugin({
             filename: 'css/[name].css', // bundled css file (name refers to entry file names)
