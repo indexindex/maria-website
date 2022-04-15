@@ -1,7 +1,7 @@
 const path = require('path'); // for more effective workflow with paths
-const HTMLWebpackPlugin = require('html-webpack-plugin'); // compile src html to dist with auto adding script tags
-const {CleanWebpackPlugin} = require('clean-webpack-plugin'); // clean dist directory from old files after each compilation
-const CopyWebpackPlugin = require('copy-webpack-plugin'); // to copy static files from src to dist
+const HTMLWebpackPlugin = require('html-webpack-plugin'); // compile src html to docs with auto adding script tags
+const {CleanWebpackPlugin} = require('clean-webpack-plugin'); // clean docs directory from old files after each compilation
+const CopyWebpackPlugin = require('copy-webpack-plugin'); // to copy static files from src to docs
 const MiniCssExtractPlugin = require('mini-css-extract-plugin'); // this plugin extracts CSS into separate files
 const CssMinimizerPlugin = require('css-minimizer-webpack-plugin'); // optimize and minify CSS
 const TerserWebpackPlugin = require('terser-webpack-plugin'); // optimize and uglify(minify) JS
@@ -91,15 +91,15 @@ module.exports = {
     output: {
         filename: 'js/[name].bundle.js', // bundled file (name refers to entry file names)
         // filename also contains pattern [contenthash] which can be used instead of bundle to generate hashed file names
-        path: path.resolve(__dirname, '../dist') // path will point to dist folder
+        path: path.resolve(__dirname, '../docs') // path will point to docs folder
     },
     optimization: optimization(),
-    // while dev server is running, all the dist content is saved in local memory, to ensure faster running
+    // while dev server is running, all the docs content is saved in local memory, to ensure faster running
     devServer: {
         port: 8080,
         hot: isDev, // activate devServer only if isDev === true,
         static: {
-            directory: path.resolve(__dirname, '../dist/html/') // where to look for content
+            directory: path.resolve(__dirname, '../docs/html/') // where to look for content
         },
         devMiddleware: {
             writeToDisk: true
