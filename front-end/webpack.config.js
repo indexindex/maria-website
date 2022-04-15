@@ -89,7 +89,7 @@ module.exports = {
     },
     // output file (where to store)
     output: {
-        filename: 'js/[name].bundle.js', // bundled file (name refers to entry file names)
+        filename: './js/[name].bundle.js', // bundled file (name refers to entry file names)
         // filename also contains pattern [contenthash] which can be used instead of bundle to generate hashed file names
         path: path.resolve(__dirname, '../docs') // path will point to docs folder
     },
@@ -113,7 +113,7 @@ module.exports = {
         new CleanWebpackPlugin(),
         // adding MiniCssExtractPlugin
         new MiniCssExtractPlugin({
-            filename: 'css/[name].css', // bundled css file (name refers to entry file names)
+            filename: './css/[name].css', // bundled css file (name refers to entry file names)
             // filename also contains pattern [contenthash] which can be used instead of bundle to generate hashed file names
         })
     ],
