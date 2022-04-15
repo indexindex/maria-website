@@ -1,0 +1,16 @@
+@font-face {
+    font-family: AnekOdia;
+    src: url('../assets/font/AnekOdia.ttf');
+}
+@font-face {
+    font-family: Pacifico;
+    src: url('../assets/font/Pacifico-Regular.ttf');
+}
+
+h1,h2,h3,h4,h5,h6,p {
+    color: $color-light;
+}
+
+select, textarea, input, button {
+    font-family: AnekOdia;
+}

@@ -1,0 +1,32 @@
+// * BASE SETTINGS
+
+// * all elements (before and after also) inherit border-box
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 16px; // * browser default
+}
+
+body {
+    font-family: 'AnekOdia', sans-serif;
+    background-color: $color-secondary;
+    color: $color-light;
+    padding: 0;
+}
+
+// * Text selection background
+::selection {
+    background-color: $color-light;
+    color: $color-primary;
+}
+
+:focus {
+    outline: none;
+}

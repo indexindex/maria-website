@@ -1,0 +1,82 @@
+// * text align utilities
+.u-text-left { text-align: left !important; }
+
+.u-text-center { text-align: center !important; }
+
+.u-text-right { text-align: right !important; }
+
+
+
+// * margin top utilities
+.u-margin-top-small { margin-top: 0.625rem !important; }  // 10px
+
+.u-margin-top-medium { margin-top: 1.25rem !important; }  // 20px
+
+.u-margin-top-large { margin-top: 2.5rem !important; }    // 40px
+
+.u-margin-top-xlarge { margin-top: 3.125rem !important; }   // 50px
+
+.u-margin-top-huge { margin-top: 5rem !important; }   // 80px
+
+
+
+// * margin bottom utilities
+.u-margin-bottom-small { margin-bottom: 0.625rem !important; }  // 10px
+
+.u-margin-bottom-medium { margin-bottom: 1.25rem !important; }  // 20px
+
+.u-margin-bottom-large { margin-bottom: 2.5rem !important; }    // 40px
+
+.u-margin-bottom-xlarge { margin-bottom: 3.125rem !important; }   // 50px
+
+.u-margin-bottom-huge { margin-bottom: 5rem !important; }   // 80px
+
+
+
+// * margin right utilities
+.u-margin-right-small { margin-right: 0.625rem !important; }  // 10px
+
+.u-margin-right-medium { margin-right: 1.25rem !important; }  // 20px
+
+.u-margin-right-large { margin-right: 2.5rem !important; }    // 40px
+
+.u-margin-right-xlarge { margin-right: 3.125rem !important; }   // 50px
+
+.u-margin-right-huge { margin-right: 5rem !important; }   // 80px
+
+
+
+// * margin left utilities
+.u-margin-left-small { margin-left: 0.625rem !important; }  // 10px
+
+.u-margin-left-medium { margin-left: 1.25rem !important; }  // 20px
+
+.u-margin-left-large { margin-left: 2.5rem !important; }    // 40px
+
+.u-margin-left-xlarge { margin-left: 3.125rem !important; }   // 50px
+
+.u-margin-left-huge { margin-left: 5rem !important; }   // 80px
+
+
+// * padding top utilities
+.u-padding-top-small { padding-top: 0.625rem !important; }  // 10px
+
+.u-padding-top-medium { padding-top: 1.25rem !important; }  // 20px
+
+.u-padding-top-large { padding-top: 2.5rem !important; }    // 40px
+
+.u-padding-top-huge { padding-top: 3.125rem !important; }   // 50px
+
+
+
+// * padding bottom utilities
+.u-padding-bottom-small { padding-bottom: 0.625rem !important; }  // 10px
+
+.u-padding-bottom-medium { padding-bottom: 1.25rem !important; }  // 20px
+
+.u-padding-bottom-large { padding-bottom: 2.5rem !important; }    // 40px
+
+.u-padding-bottom-huge { padding-bottom: 3.125rem !important; }   // 50px
+
+// * max-width: 1920px
+.u-max-1920 { max-width: rem-calc(1920px) !important; }

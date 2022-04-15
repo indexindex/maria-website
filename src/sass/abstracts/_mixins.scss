@@ -1,0 +1,87 @@
+// * MEDIA QUERY MANAGER
+
+@mixin respond($breakpoint) {
+    @if $breakpoint == custom-300 {
+        @media only screen and (max-width: 18.75em) { @content };
+    }
+    @if $breakpoint == custom-350 {
+        @media only screen and (max-width: 21.875em) { @content };
+    }
+    @if $breakpoint == custom-400 {
+        @media only screen and (max-width: 25em) { @content };
+    }
+    @if $breakpoint == custom-450 {
+        @media only screen and (max-width: 28.125em) { @content };
+    }
+    @if $breakpoint == custom-500 {
+        @media only screen and (max-width: 31.25em) { @content };
+    }
+    @if $breakpoint == custom-550 {
+        @media only screen and (max-width: 34.375em) { @content };
+    }
+    @if $breakpoint == custom-600 {
+        @media only screen and (max-width: 37.5em) { @content };
+    }
+    @if $breakpoint == custom-650 {
+        @media only screen and (max-width: 40.625em) { @content };
+    }
+    @if $breakpoint == custom-700 {
+        @media only screen and (max-width: 43.75em) { @content };
+    }
+    @if $breakpoint == custom-750 {
+        @media only screen and (max-width: 46.875em) { @content };
+    }
+    @if $breakpoint == custom-800 {
+        @media only screen and (max-width: 50em) { @content };
+    }
+    @if $breakpoint == custom-850 {
+        @media only screen and (max-width: 53.125em) { @content };
+    }
+    @if $breakpoint == custom-900 {
+        @media only screen and (max-width: 56.25em) { @content };
+    }
+    @if $breakpoint == custom-950 {
+        @media only screen and (max-width: 59.375em) { @content };
+    }
+    @if $breakpoint == custom-1000 {
+        @media only screen and (max-width: 62.5em) { @content };
+    }
+    @if $breakpoint == custom-1050 {
+        @media only screen and (max-width: 65.625em) { @content };
+    }
+    @if $breakpoint == custom-1100 {
+        @media only screen and (max-width: 68.75em) { @content };
+    }
+    @if $breakpoint == custom-1150 {
+        @media only screen and (max-width: 71.875em) { @content };
+    }
+    @if $breakpoint == custom-1200 {
+        @media only screen and (max-width: 75em) { @content };
+    }
+    @if $breakpoint == custom-1800 {
+        @media only screen and (min-width: 112.5em) { @content };
+    }
+}
+
+// ( @include respond(custom-1000) { ... } )
+
+
+
+// MIXINS ( @include someMixin; )
+
+// clear float bugs
+@mixin clearfix {
+    &::after {
+        content: '';
+        display: table;
+        clear: both;
+    }
+}
+
+// center content in both X and Y direction
+@mixin absCenter {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}

@@ -1,0 +1,21 @@
+// * ANIMATIONS
+
+@keyframes openMenuWheelLayer {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: .5;
+    }
+}
+
+@keyframes closeMenuWheelLayer {
+    0% {
+        opacity: .5;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
