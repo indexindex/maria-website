@@ -25,6 +25,11 @@ body {
     }
 }
 
+nav,
+main {
+    max-width: rem-calc(1920px);
+}
+
 // * Text selection background
 ::selection {
     background-color: $color-light;

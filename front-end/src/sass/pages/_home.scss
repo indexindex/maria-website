@@ -1,12 +1,37 @@
 .section-intro {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(rem-calc(250px), 1fr));
+    grid-gap: 3rem;
+    max-width: rem-calc(1000px);
+    margin: 0 auto;
+
+    &__gallery {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+        grid-auto-rows: rem-calc(100px);
+        grid-gap: 1rem;
+        padding: 1rem;
+    
+        &--img {
+            width: 100%;
+            height: rem-calc(100px);
+            object-fit: cover;
+            object-position: top;
+
+            &:first-child,
+            &:last-child {
+                grid-column: span 2;
+            }
+        }
+    }
 
     &__about {
-        max-width: rem-calc(448px);
-        min-width: rem-calc(250px);
-        flex: 1;
+        background-color: rgba($color-primary, .5);
+        transition: background-color .3s ease-in-out;
         padding: 1rem;
+
+        &:hover {
+            background-color: rgba($color-primary, .3);
+        }
     }
 }

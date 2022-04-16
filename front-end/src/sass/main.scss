@@ -8,9 +8,11 @@
 @import "base/typography";
 @import "base/utilities";
 
-@import "components/gallery";
+@import "components/button";
 
 @import "layout/header";
 @import "layout/footer";
+@import "layout/main";
+@import "layout/nav";
 
 @import "pages/home";

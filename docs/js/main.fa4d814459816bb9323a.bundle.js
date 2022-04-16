@@ -73,7 +73,7 @@ var ___HTML_LOADER_REPLACEMENT_0___ = ___HTML_LOADER_GET_SOURCE_FROM_IMPORT___(_
 var ___HTML_LOADER_REPLACEMENT_1___ = ___HTML_LOADER_GET_SOURCE_FROM_IMPORT___(___HTML_LOADER_IMPORT_1___);
 var ___HTML_LOADER_REPLACEMENT_2___ = ___HTML_LOADER_GET_SOURCE_FROM_IMPORT___(___HTML_LOADER_IMPORT_2___);
 var ___HTML_LOADER_REPLACEMENT_3___ = ___HTML_LOADER_GET_SOURCE_FROM_IMPORT___(___HTML_LOADER_IMPORT_3___);
-var code = "<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n    <meta charset=\"UTF-8\">\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n\n    <title>Maria's website</title>\n</head>\n<body>\n\n    <header>\n        <h1>Welcome to my world...</h1>\n    </header>\n\n    <nav>\n        <a href=\"\"></a>\n        <a href=\"\"></a>\n        <a href=\"\"></a>\n    </nav>\n\n    <main>\n        <section class=\"section-intro\">\n            <div class=\"section-intro__gallery gallery\">\n                <figure class=\"gallery__figure gallery__figure--1\">\n                    <img src=\"" + ___HTML_LOADER_REPLACEMENT_0___ + "\" alt=\"gallery_1\" class=\"gallery__figure--img\">\n                    <figcaption></figcaption>\n                </figure>\n                <figure class=\"gallery__figure gallery__figure--2\">\n                    <img src=\"" + ___HTML_LOADER_REPLACEMENT_1___ + "\" alt=\"gallery_2\" class=\"gallery__figure--img\">\n                    <figcaption></figcaption>\n                </figure>\n                <figure class=\"gallery__figure gallery__figure--3\">\n                    <img src=\"" + ___HTML_LOADER_REPLACEMENT_2___ + "\" alt=\"gallery_3\" class=\"gallery__figure--img\">\n                    <figcaption></figcaption>\n                </figure>\n                <figure class=\"gallery__figure gallery__figure--4\">\n                    <img src=\"" + ___HTML_LOADER_REPLACEMENT_3___ + "\" alt=\"gallery_4\" class=\"gallery__figure--img\">\n                    <figcaption></figcaption>\n                </figure>\n            </div>\n            <div class=\"section-intro__about\">\n                <article>\n                    <h2>...</h2>\n                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquam eum quaerat sapiente ullam natus vero non consequuntur. Magni molestias commodi ipsa, atque nobis, suscipit harum eos beatae ipsam, dolor soluta.</p>\n                </article>\n            </div>\n        </section>\n    </main>\n\n    <footer></footer>\n\n</body>\n</html>";
+var code = "<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n    <meta charset=\"UTF-8\">\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n\n    <title>Maria's website</title>\n</head>\n<body>\n\n    <header>\n        <h1>Welcome to my world...</h1>\n    </header>\n\n    <nav>\n        <a href=\"\" class=\"button\">K.Dorama</a>\n        <a href=\"\" class=\"button\">Movies</a>\n        <a href=\"\" class=\"button\">About Me</a>\n    </nav>\n\n    <main>\n        <section class=\"section-intro\">\n\n            <div class=\"section-intro__gallery\">\n                <img src=\"" + ___HTML_LOADER_REPLACEMENT_0___ + "\" alt=\"gallery_image-1\" class=\"section-intro__gallery--img\">\n                <img src=\"" + ___HTML_LOADER_REPLACEMENT_1___ + "\" alt=\"gallery_image-2\" class=\"section-intro__gallery--img\">\n                <img src=\"" + ___HTML_LOADER_REPLACEMENT_2___ + "\" alt=\"gallery_image-3\" class=\"section-intro__gallery--img\">\n                <img src=\"" + ___HTML_LOADER_REPLACEMENT_3___ + "\" alt=\"gallery_image-4\" class=\"section-intro__gallery--img\">\n            </div>\n\n            <div class=\"section-intro__about\">\n                <article>\n                    <h2>...</h2>\n                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquam eum quaerat sapiente ullam natus vero non consequuntur. Magni molestias commodi ipsa, atque nobis, suscipit harum eos beatae ipsam, dolor soluta.</p>\n                </article>\n            </div>\n\n        </section>\n    </main>\n\n    <footer></footer>\n\n</body>\n</html>";
 // Exports
 module.exports = code;
 
@@ -90,7 +90,7 @@ __webpack_require__.r(__webpack_exports__);
 // extracted by mini-css-extract-plugin
 
     if(true) {
-      // 1650044223471
+      // 1650121593840
       var cssReload = __webpack_require__(/*! ../../node_modules/mini-css-extract-plugin/dist/hmr/hotModuleReplacement.js */ "../node_modules/mini-css-extract-plugin/dist/hmr/hotModuleReplacement.js")(module.id, {"locals":false});
       module.hot.dispose(cssReload);
       module.hot.accept(undefined, cssReload);
@@ -271,7 +271,7 @@ module.exports = __webpack_require__.p + "assets/images/gallery_4.jpeg";
 /******/ 	
 /******/ 	/* webpack/runtime/getFullHash */
 /******/ 	!function() {
-/******/ 		__webpack_require__.h = function() { return "a22c3ef6ef496fd541b9"; }
+/******/ 		__webpack_require__.h = function() { return "3cfc3a60833a84b91ebd"; }
 /******/ 	}();
 /******/ 	
 /******/ 	/* webpack/runtime/global */
@@ -1407,4 +1407,4 @@ module.exports = __webpack_require__.p + "assets/images/gallery_4.jpeg";
 /******/ 	
 /******/ })()
 ;
-//# sourceMappingURL=main.42b0abf822c99168835d.bundle.js.map
+//# sourceMappingURL=main.fa4d814459816bb9323a.bundle.js.map

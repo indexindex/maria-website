@@ -27,6 +27,10 @@ body {
     body {
       padding: 0; } }
 
+nav,
+main {
+  max-width: 120rem; }
+
 ::selection {
   background-color: #EDEDED;
   color: #6C4A4A; }
@@ -145,31 +149,10 @@ select, textarea, input, button {
 .u-max-1920 {
   max-width: 120rem !important; }
 
-.gallery {
-  display: grid;
-  grid-template-columns: repeat(4, minmax(10%, 1fr));
-  grid-template-rows: repeat(2, 6.25rem);
-  grid-gap: 1rem;
-  max-width: 28rem;
-  padding: 1rem; }
-  .gallery__figure {
-    overflow: hidden; }
-    .gallery__figure--1 {
-      grid-column: 1 / 4;
-      grid-row: 1 / 1; }
-    .gallery__figure--2 {
-      grid-column: 4 / 5;
-      grid-row: 1 / 1; }
-    .gallery__figure--3 {
-      grid-column: 1 / 2;
-      grid-row: 2 / 3; }
-    .gallery__figure--4 {
-      grid-column: 2 / 5;
-      grid-row: 2 / 3; }
-    .gallery__figure--img {
-      width: 100%;
-      height: 12.5rem;
-      object-fit: cover; }
+.button {
+  padding: .5rem 1.5rem;
+  border-radius: 3.125rem;
+  background-color: #6C4A4A; }
 
 header {
   background-color: #6C4A4A;
@@ -178,15 +161,38 @@ header {
   animation: headerAppear 1s;
   animation-fill-mode: forwards; }
 
-.section-intro {
+nav {
   display: flex;
   justify-content: center;
-  flex-wrap: wrap; }
-  .section-intro__about {
-    max-width: 28rem;
-    min-width: 15.625rem;
-    flex: 1;
+  flex-wrap: wrap;
+  gap: 3rem;
+  padding: 3rem; }
+
+.section-intro {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(15.625rem, 1fr));
+  grid-gap: 3rem;
+  max-width: 62.5rem;
+  margin: 0 auto; }
+  .section-intro__gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    grid-auto-rows: 6.25rem;
+    grid-gap: 1rem;
     padding: 1rem; }
+    .section-intro__gallery--img {
+      width: 100%;
+      height: 6.25rem;
+      object-fit: cover;
+      object-position: top; }
+      .section-intro__gallery--img:first-child, .section-intro__gallery--img:last-child {
+        grid-column: span 2; }
+  .section-intro__about {
+    background-color: rgba(108, 74, 74, 0.5);
+    transition: background-color .3s ease-in-out;
+    padding: 1rem; }
+    .section-intro__about:hover {
+      background-color: rgba(108, 74, 74, 0.3); }
 
 
-/*# sourceMappingURL=main.aa329dfd976d8781485a.css.map*/
+/*# sourceMappingURL=main.7fee8f092f0eeb1ea024.css.map*/
